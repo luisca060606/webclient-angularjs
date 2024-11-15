@@ -11,10 +11,6 @@
     ) {
 
         function login(username, password) {
-          console.log('aaa')
-          // resetLoginCookies();
-          // $rootScope.onEdit = false;
-          // $log.debug("Start logins/user post for login");
           let loginResource = Restangular.all('login/');
           let loginPromise = loginResource.post(
             {'username': username, 'password': password}
@@ -24,7 +20,6 @@
 
         return {
           login: login,
-          // logout: logout,
         };
       }]
   );
