@@ -9,10 +9,6 @@
           (data) => {
             console.log(data);
             localStorage.setItem("token", data.token)
-            // localStorage.setItem("username", data.user.username)
-            // localStorage.setItem("email", data.user.email)
-            // localStorage.setItem("name", data.user.name)
-            // this.router.navigate(['inicio'])
           },
           (error) => {
             $scope.errorResponse = error;
